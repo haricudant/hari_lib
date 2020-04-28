@@ -311,7 +311,7 @@ def register_view(request):
                         MessageBody=('SES email trigger'
                                      )
                     )
-                    return HttpResponseRedirect('/success/')
+                    return HttpResponseRedirect('catalog/')
                 except:
                     pass
         else:
@@ -326,7 +326,7 @@ def register_view(request):
         login(request, new_user)
         if next:
             return redirect(next)
-        return HttpResponseRedirect('/success')
+        return HttpResponseRedirect('/catalog')
 
     context ={
         'form':form

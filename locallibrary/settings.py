@@ -55,16 +55,16 @@ MIDDLEWARE = [
     # 'social_django.middleware.SocialAuthExceptionMiddleware',
 ]
 
-AUTHENTICATION_BACKENDS = (
-            'social_core.backends.twitter.TwitterOAuth',
-
-	        'social_core.backends.facebook.FacebookOAuth2',
-
-	        'django.contrib.auth.backends.ModelBackend',
-
-	        'social_core.backends.google.GoogleOAuth2',
-
-)
+# AUTHENTICATION_BACKENDS = (
+#             'social_core.backends.twitter.TwitterOAuth',
+#
+# 	        'social_core.backends.facebook.FacebookOAuth2',
+#
+# 	        'django.contrib.auth.backends.ModelBackend',
+#
+# 	        'social_core.backends.google.GoogleOAuth2',
+#
+# )
 
 #stripe settings
 if DEBUG:
@@ -141,7 +141,7 @@ USE_TZ = True
 
 # Redirect to home URL after login (Default redirects to /accounts/profile/)
 LOGIN_REDIRECT_URL = '/'
-SOCIAL_AUTH_LOGIN_REDIRECT_URL = ['/']
+# SOCIAL_AUTH_LOGIN_REDIRECT_URL = ['/']
 # Add to test email:
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
